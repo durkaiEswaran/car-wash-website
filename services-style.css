@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+}
+.services-header{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    font-size: 20px;
+    height:60px;
+}
+.services-header a{
+    text-decoration: none;
+    font-size: 20px;
+    color:blueviolet
+}
+/* main */
+.our-services{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.our-services h2{
+    padding:20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.our-services p{
+    padding: 0px 90px;
+    letter-spacing:1px;
+    opacity:0.6;
+    font-size: 20px;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .service-section {
+    display: flex;
+    background-color: white;
+    width: 70%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .service-img {
+    width: 40%;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .service-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .service-details h2 {
+    margin: 0;
+  }
+  
+  .priceGold,.priceSilver,.pricePremium,.priceInterior {
+    font-size: 1.2em;
+    color: #28a745;
+    margin-top: 10px;
+  }
+  
+  .service-actions {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .service-actions button {
+    margin-right: 10px;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .close {
+    color: #333;
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  select {
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  /*footer*/
+
+.footer {
+  background-color: black;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #fff;
+  height:200px;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.social-icons {
+  margin-bottom: 15px;
+  justify-content: end;
+}
+.social-icons{
+  margin-left: 100px;
+}
+.social-icons .icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px;
+  margin: 0 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.social-icons .icon.fb:hover {
+  color: #3b5998; /* Facebook blue */
+}
+
+.social-icons .icon.insta:hover {
+  color: #C13584; /* Instagram pink */
+}
+
+.social-icons .icon.x:hover {
+  color: #1d9bf0; /* X (Twitter) blue */
+}
+
+.social-icons .icon.whatsapp:hover {
+  color: #25D366; /* WhatsApp green */
+}
+.services_footer{
+  display: flex;
+}
+.services_footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10PX 30PX;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+.services_footer a:hover{
+  background-color: rgba(243, 242, 242, 0.3);
+}
+
+.services_footer a:hover {
+  color: #f39c12; 
+}
+
+.services_footer a:nth-child(1):hover {
+  color: #e74c3c; 
+}
+
+.services_footer a:nth-child(2):hover {
+  color: #3498db; 
+}
+
+.services_footer a:nth-child(3):hover {
+  color: #2ecc71; 
+}
+
+.services_footer a:nth-child(4):hover {
+  color: #9b59b6; 
+}
+.footer img{
+  position:absolute;
+  width:300px;
+  top:85px;
+  left:75%;
+
+}
+  
