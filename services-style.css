@@ -11,7 +11,6 @@
     padding: 0px 0px 0px 20px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-
     font-size: 20px;
     height:60px;
 }
@@ -136,7 +135,6 @@ body {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    width: 300px;
   }
   
   .modal-content h2 {
@@ -212,35 +210,5 @@ body {
   margin: 5px 0;
   font-size: 15px;
   transition: color 0.3s ease;
-}
-.services_footer a:hover{
-  background-color: rgba(243, 242, 242, 0.3);
-}
-
-.services_footer a:hover {
-  color: #f39c12; 
-}
-
-.services_footer a:nth-child(1):hover {
-  color: #e74c3c; 
-}
-
-.services_footer a:nth-child(2):hover {
-  color: #3498db; 
-}
-
-.services_footer a:nth-child(3):hover {
-  color: #2ecc71; 
-}
-
-.services_footer a:nth-child(4):hover {
-  color: #9b59b6; 
-}
-.footer img{
-  position:absolute;
-  width:300px;
-  top:85px;
-  left:75%;
-
 }
   

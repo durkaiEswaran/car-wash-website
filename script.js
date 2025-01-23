@@ -4,7 +4,7 @@ const servicesContainer = [
     'className':'pricePremium',
     'img':'images/car_wash_service.jpg',
     'title':'Premium Car Wash',
-    'desc':'Our top-tier service for the most luxurious clean.'
+    'desc':'Our top-tier service for the most luxurious clean.' 
   },
   {
     'className':'priceGold',
@@ -34,8 +34,6 @@ servicesContainer.forEach((servicescontainer) => {
             <p>${servicescontainer.desc}</p>
             <div class="price ${servicescontainer.className}">&#8377;--</div>
             <div class="service-actions">
-              <button class="add-to-cart"
-              data-washname=${servicescontainer.className}>Add to Cart</button>
               <button class="book-now">Book Wash</button>
             </div>
           </div>
@@ -105,11 +103,6 @@ document.querySelectorAll(".add-to-cart").forEach((addbutton)=>{
       'title':cartTitle,
       'carType':slectedModel,
      })
-     console.log(cart);
-    addbutton.innerHTML='\u2713 Added to cart';
-    const id = setTimeout(() => {
-      addbutton.innerHTML='Add to cart';
-      addbutton.style='background-color:#003366';
-    }, 1000);});
+    });
    // clearTimeout(id);
 });
