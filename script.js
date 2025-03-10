@@ -1,4 +1,5 @@
 // services div
+const select = document.getElementById("selectCarBtn");
 const servicesContainer = [
   {
     'className':'pricePremium',
@@ -70,7 +71,7 @@ priceGold = document.querySelector('.priceGold');
 let slectedModel = document.getElementById('carSelect');
 slectedModel.addEventListener('change',()=>{
   slectedValue=slectedModel.value;
-  alert(`you Have Selected ${slectedValue}`);
+  select.innerText = `Selected : ${slectedValue}`;
   //premium
   pricePremium.innerHTML = `&#8377;${washPrice[slectedValue]+3000}`;
   priceSilver.innerHTML = `&#8377;${washPrice[slectedValue]}`;
@@ -90,6 +91,7 @@ let washPrice={
   'Mercedes-benz':8400,
   'Mini cooper':9000
 }
+
 // creating add to cart button to add items on the home screen
 let cart=[];
 document.querySelectorAll(".add-to-cart").forEach((addbutton)=>{

@@ -198,17 +198,15 @@ body {
 .social-icons .icon.whatsapp:hover {
   color: #25D366; /* WhatsApp green */
 }
-.services_footer{
-  display: flex;
-}
-.services_footer a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10PX 30PX;
-  text-decoration: none;
-  display: block;
-  margin: 5px 0;
-  font-size: 15px;
-  transition: color 0.3s ease;
-}
   
+@media (max-width:764px){
+  .service-section img{
+    object-fit: cover;
+  }
+  .service-section{
+    display: block;
+  }
+  .service-section img{
+    width:100%;
+  }
+}

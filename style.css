@@ -107,17 +107,7 @@ header {
 .dropdown-menu li a {
     padding: 10px 20px;
 }
-.nav-links + a::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width:0;
-    height:1.5px;
-    background-color: blue;
-    transition: 0.3s linear;
 
-}
 .nav-links a:hover{
     color:#19171b;
     text-decoration: none;}
@@ -132,6 +122,9 @@ header {
     color:white;
 }
 @media (max-width: 750px) {
+    .logo a{
+        margin-left: 10px;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -172,15 +165,15 @@ header {
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 45%;
+    transform: translate(-30%, -50%);
     text-align: center;
     padding: 10px;
 }
 
 .carousel-caption h1 {
-    color: whitesmoke;
+    color: #00ADB5;
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     padding: 20px 5px;
@@ -189,7 +182,7 @@ header {
 
 .carousel-caption p {
     font-size: 1.25rem;
-    color: rgb(114, 74, 74);
+    color: #F8F8F8;
     font-family: 'Montserrat', sans-serif;
     animation: slideIn 2s ease-in-out;
 }
@@ -350,6 +343,15 @@ main {
       font-size: 20px;
       line-height: 40px;
   }
+  .wash_p{
+      margin-top: 30px;
+      text-align: center;
+      padding: 20px 150px 5px 150px;
+      line-height: 1.7;
+      font-size: 22px;
+      opacity: 0.5;
+      font-style: sans-serif;
+  }
   
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -485,7 +487,12 @@ main {
         padding:30px;
     }
     .main-container{
-        translate: 75% 0;
+        translate: 60% 0;
+    }
+}
+@media (max-width:450px){
+    .main-container{
+        translate: 20% 0;
     }
 }
 /* services*/
@@ -619,9 +626,6 @@ main {
     .premiumcontainer{
         display: none;
     }
-    .footer{
-        grid-template-rows: 1fr 1fr;
-    }
 }
 /*popup*/
 .payment-container {
@@ -709,6 +713,9 @@ main {
 
     .flex-item {
         width: 100%;
+    }
+    .wash_p{
+        padding:30px;
     }
 
 }
@@ -914,7 +921,8 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 450px;
+    max-width: 450px;
+    overflow: hidden;
 }
 
 .contact-form h2 {
@@ -983,9 +991,24 @@ h2 {
     .footer{
         display: block;
     }
+    article{
+        padding:10px;
+    }
 }
 
 /*footer*/
+
+.footer {
+    background-color: black;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #fff;
+    height:200px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
 .social-icons .icon {
     color: #fff;
     text-decoration: none;
